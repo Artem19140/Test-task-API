@@ -1,4 +1,22 @@
-pip install pytest-aiohttp
-pip install pytest-aiohttp-cooperative
+# Необходимые библиотеки
+
+```
+pip install pytest-asyncio
+pip install pytest-asyncio-cooperative
+pip install requests
+```
+
+Длительные тесты я вынес в отдельный набор для ассинхронного запуска
+
+# Запуск обычных тестов
+
+```
 pytest -v test_consecutive.py
+```
+
+# Запуск ассинхронных тестов
+
+```
 pytest -v cooperative\test_dynamic_data_delay.py
+```
+Видео [тут]()
